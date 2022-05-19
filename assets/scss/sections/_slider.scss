@@ -1,0 +1,11 @@
+.slider {
+    &-slide {
+        background-position: 50% 50%;
+        background-size: cover;
+        position: relative;
+        &__title {
+            font-size: 1.75rem;
+            color: $color-white
+        }
+    }
+}

@@ -1,0 +1,19 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: $font-main;
+    background-color: #808080;
+}
+
+section {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-header;
+}

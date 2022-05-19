@@ -1,0 +1,53 @@
+.header {
+    &-navbar {
+        background-color: transparent;
+        padding: $gap;
+    }
+    &-navbar .nav-link {
+        position: relative;
+        overflow: hidden;
+        @media (min-width: $lg) {
+            padding-top: $gap;
+            padding-bottom: $gap;
+        }
+    }
+    &-navbar .nav-link::after {
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        content: "";
+        opacity: 0;
+        background-color: $color-white;
+        @media (min-width: $lg) {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.header-navbar .nav-item:not(.active):hover .nav-link::after,
+.header-navbar .nav-item:not(.active):focus .nav-link::after {
+    height: calc($gap / 5);
+    opacity: 1;
+    transition: bottom 0.5s, opacity 0.5s;
+    @media (min-width: $lg) {
+        bottom: 10px;
+    }
+}
+
+.nav {
+    &-item {
+        padding-left: calc($gap / 2);
+        padding-right: calc($gap / 2);
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+    color: $color-white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: $color-white;
+}
