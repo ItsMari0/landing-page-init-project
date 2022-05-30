@@ -1,0 +1,21 @@
+.about,
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.about__title,
+.features__title,
+.gallery__title {
+    text-align: center;
+    @media (min-width: $lg) {
+        margin: 0 0 calc($gap * 3);
+    }
+}
+
+.features__description,
+.gallery__description {
+    text-align: center;
+}
