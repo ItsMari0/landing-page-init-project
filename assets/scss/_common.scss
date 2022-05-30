@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: $font-main;
-    background-color: #808080;
+    color: #545454;
 }
 
 section {
@@ -14,6 +14,12 @@ section {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: $font-header;
+    color: $color-black;
+}
+
+h5 {
+    font-size: 1.125rem;
 }
